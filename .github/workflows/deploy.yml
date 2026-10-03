@@ -4,11 +4,9 @@ on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -17,7 +15,6 @@ permissions:
   id-token: write
 
 jobs:
-
   test:
     name: Build and Test
     runs-on: ubuntu-latest
@@ -26,7 +23,7 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v6
 
-      - name: Verify website files
+      - name: Check website files
         run: |
           echo "Checking website files..."
           test -f index.html
@@ -42,7 +39,7 @@ jobs:
   deploy:
     name: Deploy to GitHub Pages
     needs: test
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
 
     runs-on: ubuntu-latest
 
