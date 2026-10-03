@@ -6,7 +6,7 @@ This project demonstrates the implementation of a basic **CI/CD pipeline using G
 
 A static website is automatically tested and deployed to **GitHub Pages** whenever changes are pushed to the `main` branch.
 
-This task demonstrates how DevOps automation can be used to continuously test and deploy a web application.
+This task demonstrates how DevOps automation can be used to continuously test and deploy a web application .
 
 ---
 
