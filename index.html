@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CODSOFT DevOps | Nginx Deployment</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            min-height: 100vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background: rgba(15, 23, 42, 0.9);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .badge {
+            background: #22c55e;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #22c55e;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.7;
+            color: #cbd5e1;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .card h3 {
+            color: #22c55e;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 50px 20px 30px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 700px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">CODSOFT DevOps</div>
+        <div class="badge">Nginx Server Online</div>
+    </nav>
+
+    <section class="hero">
+        <h1>My First <span>Nginx Deployment</span></h1>
+
+        <p>
+            A custom static website deployed using Nginx on Ubuntu through
+            Windows Subsystem for Linux (WSL 2).
+        </p>
+    </section>
+
+    <section class="container">
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>⚙️ Nginx</h3>
+                <p>
+                    High-performance web server used to serve this website
+                    and handle HTTP requests.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🐧 Ubuntu</h3>
+                <p>
+                    Linux environment running through WSL 2 on Windows.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🚀 DevOps</h3>
+                <p>
+                    Practical deployment experience covering server
+                    configuration and web hosting.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer>
+        CODSOFT DevOps Internship · Task 3
+        <br>
+        Deployed with Nginx
+    </footer>
+
+</body>
+</html>
