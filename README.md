@@ -2,7 +2,7 @@
 
 ## 📌 Project Overview
 
-This project demonstrates the implementation of a basic **CI/CD pipeline using GitHub Actions**.
+This project demonstrates the implementation of a basic **CI/CD pipeline using GitHub Actions**  .
 
 A static website is automatically tested and deployed to **GitHub Pages** whenever changes are pushed to the `main` branch.
 
